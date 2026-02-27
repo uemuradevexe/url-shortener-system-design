@@ -78,7 +78,7 @@ With 7 Base62 characters: **62⁷ ≈ 3.5 trillion possible URLs.**
 
 | Approach | Pros | Cons |
 |----------|------|------|
-| **Counter + Base62** ✅ | No collisions, simple, short codes | Sequential IDs (predictable) |
+| **Counter + Base62**  | No collisions, simple, short codes | Sequential IDs (predictable) |
 | Hash (MD5/SHA256 truncated) | Deterministic for same URL | Collisions possible, extra verification needed |
 | UUID | Globally unique | Too long for a short URL |
 | Nanoid | Random, configurable length | Collisions possible, more complexity |
