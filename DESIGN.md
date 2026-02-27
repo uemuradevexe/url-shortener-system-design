@@ -140,7 +140,7 @@ Redirects are a **read-heavy workload** with simple key-based access — the ide
                └── Found      → populate Redis → 302 redirect
 ```
 
-### 301 vs 302 — the most important decision
+### 301 vs 302
 
 **Choice: `302 Found` (temporary redirect)**
 
