@@ -242,7 +242,6 @@ Analytical reads (dashboards, reports) must be routed to replicas, never to the 
 
 | Feature | Reason to defer |
 |---------|-----------------|
-| **Real-time analytics** (clicks, geo, device) | Requires an event pipeline (Kafka + ClickHouse). High complexity, zero user expectation at day 1 |
 | **Authentication and user accounts** | Dramatically expands scope. v1 accepts URLs without auth |
 | **Custom domains** (`mysite.com/link`) | Requires complex routing, per-tenant SSL certificates, multi-tenancy in the schema |
 | **Metrics dashboard** | Depends on analytics, which is already deferred |
