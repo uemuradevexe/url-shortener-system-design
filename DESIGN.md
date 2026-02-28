@@ -209,15 +209,15 @@ The service **does not verify** whether the destination is reachable — this wo
                     └──────────┬──────────┘
                                │
               ┌────────────────▼────────────────┐
-              │      API Servers (N pods)        │  stateless, horizontal scaling
+              │      API Servers (N pods)       │  stateless, horizontal scaling
               └────────────────┬────────────────┘
                                │
               ┌────────────────▼────────────────┐
-              │       Redis Cluster              │  sharding by key hash
+              │       Redis Cluster             │  sharding by key hash
               └────────────────┬────────────────┘
                                │ (only cache misses)
               ┌────────────────▼────────────────┐
-              │   PostgreSQL Primary + Replicas  │  replicas for analytical reads
+              │   PostgreSQL Primary + Replicas │  replicas for analytical reads
               └─────────────────────────────────┘
 ```
 
